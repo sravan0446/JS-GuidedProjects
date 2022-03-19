@@ -36,3 +36,12 @@ form.addEventListener('submit',function(e){
 
 
 })
+const hidebox=document.querySelector('#hide');
+hidebox.addEventListener('change',function(e){
+    if(hidebox.checked){
+        li.style.display="none"
+    }
+    else{
+        li.style.display="initial"
+    }
+})

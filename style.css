@@ -21,17 +21,15 @@ h1, h2{
 }
 
 #page-banner{
-    background: linear-gradient(to right, #000428, #004e92);
+    background:linear-gradient(to right, #136a8a, #267871);;
     padding: 10px 0;
-    color:aliceblue;
-
+    color: white;
 }
 
 #page-banner h1, #page-banner p{
     width: 100%;
     text-align: center;
     margin: 10px 0;
-;
 }
 
 #page-banner input{
@@ -40,16 +38,17 @@ h1, h2{
     margin: 20px auto;
     display: block;
     padding: 8px;
-    border: 1px solid rgb(5, 4, 4);
+    border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 16px;;
+    font-size: 16px;
+    color: #444;
 }
 
-#book-list, #add-book{
+#book-list, #add-book, #tabbed-content{
     margin: 30px;
 }
 
-#book-list ul{
+#book-list ul, #tabbed-content ul{
     list-style-type: none;
     padding: 0;
 }
@@ -61,12 +60,12 @@ h1, h2{
 }
 
 #book-list li:hover{
-    border-color: #000428; 
+    border-color: #267871;
 }
 
 .delete{
     float: right;
-    background:#004e92;
+    background: #267871;
     padding: 6px;
     border-radius: 4px;
     cursor: pointer;
@@ -92,11 +91,12 @@ h1, h2{
     box-sizing: border-box;
     width: 300px;
     float: left;
+    clear: both;
 }
 
 #add-book button{
     border: 1px solid #9361bf;
-    background: #004e92;
+    background: #136a8a;
     padding: 10px 20px;
     font-size: 16px;
     display: inline-block;
@@ -104,7 +104,7 @@ h1, h2{
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     width: 100px;
-    /* float: left; */
+    float: left;
     margin: 20px 0;
     border-left: 0;
     color: white;
@@ -114,4 +114,12 @@ h1, h2{
     content: '';
     display: block;
     clear: both;
+}
+
+#add-book #hide{
+  width: 30px;
+}
+
+#add-book label{
+  line-height: 52px;
 }
