@@ -1,10 +1,8 @@
-var dbutton=document.querySelectorAll("#adding-book .delete")
-Array.from(dbutton).forEach(function(btn){
-btn.addEventListener('click',function(e){
-    const li=e.target.parentElement;
-
-    li.parentNode.removeChild(li)
-
-
-})
+const li=document.querySelector("#book-list ul")
+li.addEventListener('click',function(e)
+{
+    if(e.target.className=='delete'){
+        const lis=e.target.parentElement
+        li.removeChild(lis)
+    }
 })
